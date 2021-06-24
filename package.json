@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --watch",
+    "tests": "jest",
+    "dev": "webpack --mode development",
+    "build-production": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/helciodev/bugHunters/issues"
   },
-  "homepage": "https://github.com/helciodev/bugHunters#readme"
+  "homepage": "https://github.com/helciodev/bugHunters#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
+  }
 }
