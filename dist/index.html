@@ -6,7 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+body{
+    font-family:sans-serif;
+  }
+    canvas {
+      border: 1px solid red;
+      display:block;
+      margin: 0 auto;
+    }
+    .title,.credits {
+      position:absolute;
+  right: 37%;
+  width: 300px;
+  border: 3px solid #fff;
+  background: blue;
+  padding: 10px;
+  z-index:1000;
+  display: none;
+  color:white;
+    }
+
+    .title {
+      top: 36%;
+    }
+
+    .credits {
+      top: 25%;
+    }
+
+    a {
+      color:#fff;
+    }
+
+    a:hover {
+      color:#777;
+    }
+  </style>
 <body>
+  <div class="title">
+  <h2>Login to play</h2>
+  <form id=player-login>
+  <input id="name-getter" type="text" placeholder ='your name'>
+  <input type="submit" value="login">
+  </form>
+  </div>
+
+  <div class="credits" id="credits">
+  <p>Use arrow keys on your keyboard arrrow keys to move around the map</p>
+  <p>Use arrow keys on keyboard arrrow key to choose target dragon and space bar to attack</p>
+  <p>created by <a href="https://github.com/helciodev" target="blank">helciodev</a></p>
+  </div>
+
   <script src="app.bundle.js"></script>
 </body>
 </html>
