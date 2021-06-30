@@ -79,20 +79,20 @@ this.load.on('complete', function () {
 this.timedEvent = this.time.delayedCall(3000, this.ready, [], this);
  
   // load assets needed in our game
-  this.load.image('blueButton1', './public/assets/ui/blue_button02.png');
-  this.load.image('blueButton2', './public/assets/ui/blue_button03.png');
+  this.load.image('blueButton1', './assets/ui/blue_button02.png');
+  this.load.image('blueButton2', './assets/ui/blue_button03.png');
 // every other asset
-  this.load.image('box', './public/assets/ui/grey_box.png');
-  this.load.image('checkedBox', './public/assets/ui/blue_boxCheckmark.png');
-  this.load.audio('bgMusic', ['./public/assets/TownTheme.mp3']);
-   this.load.image('tiles', './public/assets/map/spritesheet.png');
-    this.load.tilemapTiledJSON('map', './public/assets/map/map.json');
-    this.load.spritesheet('player', './public/assets/RPG_assets.png', { frameWidth: 16, frameHeight: 16 });
-    this.load.image('blueDragon', 'public/assets/dragonblue.png');
-    this.load.image('orangeDragon', 'public/assets/dragonorange.png');
+  this.load.image('box', './assets/ui/grey_box.png');
+  this.load.image('checkedBox', './assets/ui/blue_boxCheckmark.png');
+  this.load.audio('bgMusic', ['./assets/TownTheme.mp3']);
+   this.load.image('tiles', './assets/map/spritesheet.png');
+    this.load.tilemapTiledJSON('map', './assets/map/map.json');
+    this.load.spritesheet('player', './assets/RPG_assets.png', { frameWidth: 16, frameHeight: 16 });
+    this.load.image('blueDragon', './assets/dragonblue.png');
+    this.load.image('orangeDragon', './assets/dragonorange.png');
 // sounds
-    this.load.audio('dragonAttackSound', ['./public/assets/music/fire.wav']);
-    this.load.audio('heroAttackSound', ['./public/assets/music/attack.wav']);
+    this.load.audio('dragonAttackSound', ['./assets/music/fire.wav']);
+    this.load.audio('heroAttackSound', ['./assets/music/attack.wav']);
   }
 
   create () {
