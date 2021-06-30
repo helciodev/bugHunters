@@ -14,7 +14,7 @@ export default class LeaderBoardScene extends Phaser.Scene {
 
     this.drawLeaderboardTitle();
     const scores = this.api.getScores();
-    scores.then(data => {
+    scores.then((data) => {
       const players = data.result.sort((a, b) => b.score - a.score);
       this.drawTop5Player(players.slice(0, 5));
     });

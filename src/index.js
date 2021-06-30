@@ -1,10 +1,11 @@
+import Phaser from 'phaser';
 import Model from './Models/Model';
 import config from './config/config';
 import GameScene from './scenes/GameScene';
 import BootScene from './scenes/bootScene';
 import CreditsScene from './scenes/CreditsScene';
-import OptionsScene from './scenes/ OptionsScene';
-import PreloaderScene from './scenes/preloaderScene'; 
+import OptionsScene from './scenes/OptionsScene';
+import PreloaderScene from './scenes/preloaderScene';
 import TitleScene from './scenes/TitleScene';
 import LoginScene from './scenes/LoginScene';
 import BattleScene from './scenes/BattleScene';
@@ -14,7 +15,7 @@ import ScoreScene from './scenes/scoreScene';
 import LeaderBoardScene from './scenes/LeaderBoardScene';
 
 class Game extends Phaser.Game {
-  constructor () {
+  constructor() {
     super(config);
     const model = new Model();
     this.globals = { model, bgMusic: null };
@@ -33,5 +34,5 @@ class Game extends Phaser.Game {
     this.scene.start('Boot');
   }
 }
- 
+
 window.game = new Game();

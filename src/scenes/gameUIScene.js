@@ -27,9 +27,8 @@ export default class GameUIScene extends Phaser.Scene {
     this.emitter.on('EnemySelected', this.onEnemySelected, this);
   }
 
-
   onHeroSelected() {
-    const alive = this.battleScene.heroes.filter(item => item.living);
+    const alive = this.battleScene.heroes.filter((item) => item.living);
     this.heroIndex += 1;
     if (this.heroIndex >= alive.length) this.heroIndex = 0;
 
@@ -50,8 +49,8 @@ export default class GameUIScene extends Phaser.Scene {
     this.currentMenu = null;
     this.selectedEnemy = id;
 
-    const aliveEnemies = this.battleScene.enemies.filter(item => item.living);
-    const aliveHeroes = this.battleScene.heroes.filter(item => item.living);
+    const aliveEnemies = this.battleScene.enemies.filter((item) => item.living);
+    const aliveHeroes = this.battleScene.heroes.filter((item) => item.living);
 
     if (this.selectedEnemy >= aliveEnemies.length) {
       this.selectedEnemy = 0;
@@ -68,7 +67,7 @@ export default class GameUIScene extends Phaser.Scene {
   }
 
   selectHeroes(heroesMenu) {
-    const alive = this.battleScene.heroes.filter(item => item.living);
+    const alive = this.battleScene.heroes.filter((item) => item.living);
     const id = Math.floor(Math.random() * alive.length);
     heroesMenu.select(id);
     heroesMenu.confirm();

@@ -58,7 +58,6 @@ export default class BattleScene extends Phaser.Scene {
 
     if (attacker instanceof Player) {
       this.model.score += 10;
-      console.log(this.model.score)
       this.emitter.emit('ScoreChanged', this.model.score);
       this.scene.scene.time.addEvent({
         delay: 2000,
@@ -73,8 +72,8 @@ export default class BattleScene extends Phaser.Scene {
   }
 
   checkEndBattle() {
-    const aliveHeroes = this.heroes.filter(item => item.living);
-    const aliveEnemies = this.enemies.filter(item => item.living);
+    const aliveHeroes = this.heroes.filter((item) => item.living);
+    const aliveEnemies = this.enemies.filter((item) => item.living);
 
     if (aliveHeroes.length <= 0) {
       this.scene.stop('gameUI');
@@ -106,12 +105,12 @@ export default class BattleScene extends Phaser.Scene {
   }
 
   getRandomEnemies() {
-    const alive = this.enemies.filter(unit => unit.living);
+    const alive = this.enemies.filter((unit) => unit.living);
     return alive[Math.floor(Math.random() * alive.length)];
   }
 
   getRandomHeroes() {
-    const alive = this.heroes.filter(unit => unit.living);
+    const alive = this.heroes.filter((unit) => unit.living);
     return alive[Math.floor(Math.random() * alive.length)];
   }
 }
