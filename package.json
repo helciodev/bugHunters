@@ -27,11 +27,20 @@
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
     "copy-webpack-plugin": "^9.0.0",
+    "jest": "^27.0.6",
+    "regenerator-runtime": "^0.11.1",
     "webpack": "^5.40.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "jest-fetch-mock": "^3.0.3",
     "phaser": "^3.55.2"
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
   }
 }

@@ -13,7 +13,7 @@ export default class TitleScene extends Phaser.Scene {
     const credit = document.getElementById('credits');
     credit.style.display = 'none';
     // Game
-    this.gameButton = new Button(this, config.width / 2, config.height / 2 - 80, 'blueButton1', 'blueButton2', 'Play', 'GameOver');
+    this.gameButton = new Button(this, config.width / 2, config.height / 2 - 80, 'blueButton1', 'blueButton2', 'Play', 'Login');
     // leaderboard
     this.lead = new Button(this, config.width / 2, config.height / 2, 'blueButton1', 'blueButton2', 'Lead', 'LeaderBoard');
     // Options
