@@ -22,7 +22,7 @@ export default class GameOverScene extends Phaser.Scene {
       this.add.existing(menuButton);
     });
 
-    this.cameras.main.setBackgroundColor('rgba(0, 200, 0, 0.5)');
+    this.cameras.main.setBackgroundColor('rgba(0, 0, 0, 0.5)');
     this.scene.scene.add.text(
       config.width / 2 - 80,
       config.height / 2 - 80,
