@@ -58,7 +58,7 @@ Follow along the steps below to get a copy at your local machine.
 - Navigate to the `bugHunters` directory
 
   ```
-  cd todo-list-app
+  cd bugHunters
   ```
 
 - Install the npm package with `npm install`
