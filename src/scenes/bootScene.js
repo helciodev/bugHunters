@@ -6,7 +6,7 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logo', 'public/assets/bug-hunter-logo.png');
+    this.load.image('logo', 'assets/bug-hunter-logo.png');
   }
 
   create() {
