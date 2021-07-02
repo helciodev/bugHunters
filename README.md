@@ -30,11 +30,12 @@ To play the game follow the instruction below:
 **Movement instruction:**
 - Player can use the `left` (&#8592;) arrow key to move left.
 - Player can use the `right` (&#8594;) arrow key to move right.
-- Player can use the `up` (&#8593;) arrow key to jump.
+- Player can use the `up` (&#8593;) arrow key to move up in the map.
+- Player can use the `down` (&#11107;) arrow key to move up in the map.
 
 **Battle instruction**
-- player can use up (&#8593;) and down(&#8595;) arrow keys to navigate the menu
-- Player can use the `space bar` to select the options from the menu.
+- player can use up (&#8593;) and down(&#8595;) arrow keys to choose bug to perform attack in  the battle menu.
+- Player can use the `space bar` to perform the attack ounce the bug is selected.
 
 ## Features
 
