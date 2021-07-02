@@ -35,7 +35,7 @@ To play the game follow the instruction below:
 
 **Battle instruction**
 - player can use up (&#8593;) and down(&#8595;) arrow keys to choose bug to perform attack in  the battle menu.
-- Player can use the `space bar` to perform the attack ounce the bug is selected.
+- Player can use the `space bar` to perform the attack once the bug is selected.
 
 ## Features
 
