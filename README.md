@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [About](#about)
+- [Game design](#game-design)
 - [Gameplay](#how-to-play)
 - [Features](#features)
 - [Live Demo](#live-demo)
@@ -22,6 +23,12 @@
 Bug Hunters is game built with the phaser engine, the game is played on the browser, the objective is to help junior and senior dev destroy all bugs.
 
 ![Screenshot-main-page](src/assets/bugHunter.gif)
+
+## Game design
+
+The first step was to look for What is an RPG game?. After all this process, I started to brainstorm and just picked, the ones that looked realistic to build in 3 days, because 2 days were for study. Also, after reading the following readings, feel free to check it out: The 3 Primary Principles of Game Design, Beginner’s Guide to Game Mechanics, The Ultimate Guide to Level Design, I generated the following questions to myself: who are going to be the main character?, who are going to be the bad guys?, how many bad guys will be there?, what type of skills?, what is the objective of the game?, how the user will interact with the game?
+
+And so on. This bunch of questions helped a lot to design the game. Also checking many resources in Open Game Art, gave me and inspired me with more ideas.
 
 ### Gameplay
 

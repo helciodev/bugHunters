@@ -9,27 +9,35 @@ export default class Leaderboard {
 
   getScores() {
     const url = `${this.endpoint}games/${this.gameId}/scores/`;
-    const response = fetch(
-      url,
-      { method: 'GET' },
-    ).then((response) => response.json());
+    try {
+      const response = fetch(
+        url,
+        { method: 'GET' },
+      ).then((response) => response.json());
 
-    return response;
+      return response;
+    } catch (err) {
+      return err;
+    }
   }
 
   setScore(data) {
     const url = `${this.endpoint}games/${this.gameId}/scores/`;
-    const response = fetch(
-      url,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+    try {
+      const response = fetch(
+        url,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
         },
-        body: JSON.stringify(data),
-      },
-    ).then((response) => response.json());
+      ).then((response) => response.json());
 
-    return response;
+      return response;
+    } catch (err) {
+      return err;
+    }
   }
 }
