@@ -37,6 +37,8 @@ test('returns user scores', async () => {
   const scores = await leaderboard.getScores();
 
   expect(scores.result).toEqual(response);
+  expect(scores.result.length).toEqual(2);
+  expect(scores.result[0].user).toEqual('Mario Ballot');
   expect(fetch.mock.calls.length).toEqual(1);
 });
 
