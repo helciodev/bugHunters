@@ -1,6 +1,6 @@
-import Model from '../../src/Models/Model.js';
+import Model from '../../src/Models/Model';
 
-const me = new Model;
+const me = new Model();
 
 test('if setting me.score equal 12 to equal me.playerScore', () => {
   me.score = 12;
