@@ -8,7 +8,7 @@
     "test": "jest",
     "dev": "webpack --mode development",
     "build-production": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack serve --mode development --open"
   },
   "repository": {
     "type": "git",
