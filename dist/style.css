@@ -1,0 +1,37 @@
+body {
+    font-family:sans-serif;
+  }
+
+canvas {
+  border: 1px solid red;
+  display:block;
+  margin: 0 auto;
+}
+
+.title,.credits {
+  position:absolute;
+  right: 37%;
+  width: 300px;
+  border: 3px solid #fff;
+  background: blue;
+  padding: 10px;
+  z-index:1000;
+  display: none;
+  color:white;
+}
+
+.title {
+  top: 36%;
+}
+
+.credits {
+  top: 25%;
+}
+
+a {
+  color:#fff;
+}
+
+a:hover {
+  color:#777;
+}
